@@ -12,6 +12,11 @@
 		8BA1A7DB228EF99C00EEDEBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1A7D9228EF99C00EEDEBF /* Main.storyboard */; };
 		8BA1A7DD228EF99D00EEDEBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1A7DC228EF99D00EEDEBF /* Assets.xcassets */; };
 		8BA1A7E0228EF99D00EEDEBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1A7DE228EF99D00EEDEBF /* LaunchScreen.storyboard */; };
+		8BA1A7EC228F041000EEDEBF /* SnowParticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1A7EB228F041000EEDEBF /* SnowParticle.swift */; };
+		8BA1A7EE228F083D00EEDEBF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1A7ED228F083D00EEDEBF /* SecondViewController.swift */; };
+		8BA1A7F1228F099300EEDEBF /* fa-brands-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1A7F0228F099300EEDEBF /* fa-brands-400.ttf */; };
+		8BA1A7F3228F09A100EEDEBF /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1A7F2228F09A100EEDEBF /* fa-regular-400.ttf */; };
+		8BA1A7F5228F09A900EEDEBF /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1A7F4228F09A900EEDEBF /* fa-solid-900.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		8BA1A7DC228EF99D00EEDEBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BA1A7DF228EF99D00EEDEBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BA1A7E1228EF99D00EEDEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BA1A7EB228F041000EEDEBF /* SnowParticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowParticle.swift; sourceTree = "<group>"; };
+		8BA1A7ED228F083D00EEDEBF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		8BA1A7F0228F099300EEDEBF /* fa-brands-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fa-brands-400.ttf"; path = "../../../FontAwesome/fa-brands-400.ttf"; sourceTree = "<group>"; };
+		8BA1A7F2228F09A100EEDEBF /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fa-regular-400.ttf"; path = "../../../FontAwesome/fa-regular-400.ttf"; sourceTree = "<group>"; };
+		8BA1A7F4228F09A900EEDEBF /* fa-solid-900.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fa-solid-900.ttf"; path = "../../../FontAwesome/fa-solid-900.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,27 @@
 		8BA1A7D4228EF99C00EEDEBF /* SerenityUI */ = {
 			isa = PBXGroup;
 			children = (
+				8BA1A7EF228F097100EEDEBF /* Resources */,
 				8BA1A7D5228EF99C00EEDEBF /* AppDelegate.swift */,
 				8BA1A7D7228EF99C00EEDEBF /* ViewController.swift */,
+				8BA1A7ED228F083D00EEDEBF /* SecondViewController.swift */,
 				8BA1A7D9228EF99C00EEDEBF /* Main.storyboard */,
 				8BA1A7DC228EF99D00EEDEBF /* Assets.xcassets */,
 				8BA1A7DE228EF99D00EEDEBF /* LaunchScreen.storyboard */,
 				8BA1A7E1228EF99D00EEDEBF /* Info.plist */,
+				8BA1A7EB228F041000EEDEBF /* SnowParticle.swift */,
 			);
 			path = SerenityUI;
+			sourceTree = "<group>";
+		};
+		8BA1A7EF228F097100EEDEBF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8BA1A7F2228F09A100EEDEBF /* fa-regular-400.ttf */,
+				8BA1A7F0228F099300EEDEBF /* fa-brands-400.ttf */,
+				8BA1A7F4228F09A900EEDEBF /* fa-solid-900.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +145,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BA1A7F1228F099300EEDEBF /* fa-brands-400.ttf in Resources */,
+				8BA1A7F3228F09A100EEDEBF /* fa-regular-400.ttf in Resources */,
 				8BA1A7E0228EF99D00EEDEBF /* LaunchScreen.storyboard in Resources */,
+				8BA1A7F5228F09A900EEDEBF /* fa-solid-900.ttf in Resources */,
 				8BA1A7DD228EF99D00EEDEBF /* Assets.xcassets in Resources */,
 				8BA1A7DB228EF99C00EEDEBF /* Main.storyboard in Resources */,
 			);
@@ -135,6 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BA1A7EE228F083D00EEDEBF /* SecondViewController.swift in Sources */,
+				8BA1A7EC228F041000EEDEBF /* SnowParticle.swift in Sources */,
 				8BA1A7D8228EF99C00EEDEBF /* ViewController.swift in Sources */,
 				8BA1A7D6228EF99C00EEDEBF /* AppDelegate.swift in Sources */,
 			);

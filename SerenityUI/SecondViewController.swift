@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SecondViewController.swift
 //  SerenityUI
 //
 //  Created by Andi Ikhsan Eldrian on 17/05/19.
@@ -8,14 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SecondViewController: UIViewController {
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setBackground(imageName: "1")
-        
+
+        setBackground(imageName: "5")
     }
     
     func setBackground(imageName: String){
@@ -26,4 +24,3 @@ class ViewController: UIViewController {
     }
 
 }
-
