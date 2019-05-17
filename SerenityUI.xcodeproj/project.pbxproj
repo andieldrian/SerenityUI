@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8B51D70F228F1FD7002D7D19 /* NightMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8B51D70E228F1FD7002D7D19 /* NightMusic.mp3 */; };
 		8B51D713228F24D2002D7D19 /* DayMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8B51D712228F24D2002D7D19 /* DayMusic.mp3 */; };
-		8B51D716228F2698002D7D19 /* Rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8B51D714228F2698002D7D19 /* Rain.sks */; };
 		8B51D717228F2698002D7D19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B51D715228F2698002D7D19 /* Assets.xcassets */; };
 		8BA1A7D6228EF99C00EEDEBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1A7D5228EF99C00EEDEBF /* AppDelegate.swift */; };
 		8BA1A7D8228EF99C00EEDEBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA1A7D7228EF99C00EEDEBF /* ViewController.swift */; };
@@ -26,7 +25,6 @@
 /* Begin PBXFileReference section */
 		8B51D70E228F1FD7002D7D19 /* NightMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = NightMusic.mp3; path = ../../../NightMusic.mp3; sourceTree = "<group>"; };
 		8B51D712228F24D2002D7D19 /* DayMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = DayMusic.mp3; path = ../../../DayMusic.mp3; sourceTree = "<group>"; };
-		8B51D714228F2698002D7D19 /* Rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Rain.sks; sourceTree = "<group>"; };
 		8B51D715228F2698002D7D19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BA1A7D2228EF99C00EEDEBF /* SerenityUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SerenityUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA1A7D5228EF99C00EEDEBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 				8BA1A7F4228F09A900EEDEBF /* fa-solid-900.ttf */,
 				8B51D70E228F1FD7002D7D19 /* NightMusic.mp3 */,
 				8B51D712228F24D2002D7D19 /* DayMusic.mp3 */,
-				8B51D714228F2698002D7D19 /* Rain.sks */,
 				8B51D715228F2698002D7D19 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -157,7 +154,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B51D716228F2698002D7D19 /* Rain.sks in Resources */,
 				8BA1A7F1228F099300EEDEBF /* fa-brands-400.ttf in Resources */,
 				8BA1A7F3228F09A100EEDEBF /* fa-regular-400.ttf in Resources */,
 				8BA1A7E0228EF99D00EEDEBF /* LaunchScreen.storyboard in Resources */,

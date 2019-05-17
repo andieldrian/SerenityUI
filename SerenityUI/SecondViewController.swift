@@ -11,10 +11,17 @@ import AVFoundation
 import SpriteKit
 class SecondViewController: UIViewController {
     
+    var isOn = false
+    
     @IBAction func SnowButtonTapped(_ sender: Any) {
-        createParticles()
+        if isOn == true{
+        }else{
+            createParticles()
+            isOn = true
+        }
     }
     
+    //Particle Emitter
     func createParticles() {
         let particleEmitter = CAEmitterLayer()
         
