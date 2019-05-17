@@ -27,6 +27,7 @@ var player: AVAudioPlayer = AVAudioPlayer()
             //PROCESS ERROR
         }
         player.play()
+        player.numberOfLoops = -1
     }
     
     //BackgroundImage
