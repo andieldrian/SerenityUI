@@ -32,6 +32,7 @@
                                     <color key="titleShadowColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
                                 </state>
                                 <connections>
+                                    <action selector="NightButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d20-3Q-eWp"/>
                                     <segue destination="oCz-c6-gLD" kind="show" id="sKO-qL-l6N"/>
                                 </connections>
                             </button>
@@ -63,6 +64,7 @@
                                     <color key="titleShadowColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
                                 </state>
                                 <connections>
+                                    <action selector="DayButtonTapped:" destination="oCz-c6-gLD" eventType="touchUpInside" id="uIf-24-iZq"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="bdG-Vv-4Z9"/>
                                 </connections>
                             </button>

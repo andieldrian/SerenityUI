@@ -7,22 +7,41 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
-
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        setBackground(imageName: "1")
-        
+    //BackgroundMusic
+var player: AVAudioPlayer = AVAudioPlayer()
+    
+    @IBAction func NightButtonTapped(_ sender: Any) {
+        player.stop()
     }
     
-    func setBackground(imageName: String){
+    func setBackgroundMusic(songName: String){
+        do{
+            let audioPath = Bundle.main.path(forResource: songName, ofType: "mp3")
+            try player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+        }
+        catch{
+            //PROCESS ERROR
+        }
+        player.play()
+    }
+    
+    //BackgroundImage
+    func setBackgroundImage(imageName: String){
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: imageName)
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setBackgroundImage(imageName: "2")
+        setBackgroundMusic(songName: "DayMusic")
     }
 
 }
