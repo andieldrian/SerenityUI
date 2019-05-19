@@ -59,17 +59,17 @@ class SecondViewController: UIViewController {
         particleEmitter.renderMode = .additive
         
         let cell = CAEmitterCell()
-        cell.birthRate = 0.1
-        cell.lifetime = 20
-        cell.velocity = 70
+        cell.birthRate = 0.15
+        cell.lifetime = 10
+        cell.velocity = 90
 //        cell.velocityRange = 50
         cell.emissionLongitude = .pi
         //        cell.spinRange = 5
-        cell.scale = 0.2
+        cell.scale = 0.17
 //        cell.scaleRange = 0.1
         cell.color = UIColor(white: 1, alpha: 1.0).cgColor
         //        cell.alphaSpeed = -0.025
-        cell.contents = UIImage(named: "carLights")?.cgImage
+        cell.contents = UIImage(named: "car")?.cgImage
         particleEmitter.emitterCells = [cell]
         
         view.layer.insertSublayer(particleEmitter, at: 1)
