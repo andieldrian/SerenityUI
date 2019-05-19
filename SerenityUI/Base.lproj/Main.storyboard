@@ -50,7 +50,7 @@
         <!--Second View Controller-->
         <scene sceneID="Wm8-Sy-8eU">
             <objects>
-                <viewController id="oCz-c6-gLD" customClass="SecondViewController" customModule="SerenityUI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NightStory" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oCz-c6-gLD" customClass="SecondViewController" customModule="SerenityUI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GXF-fO-KW2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,8 +64,8 @@
                                     <color key="titleShadowColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
                                 </state>
                                 <connections>
-                                    <action selector="DayButtonTapped:" destination="oCz-c6-gLD" eventType="touchUpInside" id="uIf-24-iZq"/>
-                                    <segue destination="oCz-c6-gLD" kind="show" animates="NO" id="Rfw-Dn-ZB9"/>
+                                    <action selector="NightButtonTapped:" destination="oCz-c6-gLD" eventType="touchUpInside" id="7hh-7O-8Wx"/>
+                                    <segue destination="oCz-c6-gLD" kind="show" animates="NO" id="GMw-EE-zF1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fB-Iu-ph3">

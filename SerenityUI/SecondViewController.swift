@@ -14,9 +14,6 @@ class SecondViewController: UIViewController {
     var isSnowOn = false
     var isMusicOn = false
     
-    
-    
-    
     @IBAction func SnowButtonTapped(_ sender: Any) {
         if isSnowOn == true{
         }else{
@@ -93,7 +90,9 @@ class SecondViewController: UIViewController {
         player.stop()
     }
     
-    @IBAction func DayButtonTapped(_ sender: Any) {
+    @IBAction func NightButtonTapped(_ sender: Any) {
+        isMusicOn = false
+        player.stop()
     }
     
     //BackgroundMusic
