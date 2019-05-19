@@ -11,16 +11,20 @@ import AVFoundation
 import SpriteKit
 class SecondViewController: UIViewController {
     
-    var isOn = false
+    var isSnowOn = false
+    var isMusicOn = false
+    
+    
+    
     
     @IBAction func SnowButtonTapped(_ sender: Any) {
-        if isOn == true{
+        if isSnowOn == true{
         }else{
 //            createParticles(particle: "spark")
             UIView.animate(withDuration: 10, animations: {
                 self.createParticles(particle: "spark")
             })
-            isOn = true
+            isSnowOn = true
         }
     }
     
@@ -53,7 +57,7 @@ class SecondViewController: UIViewController {
     func createParticlesCar() {
         let particleEmitter = CAEmitterLayer()
         
-        particleEmitter.emitterPosition = CGPoint(x: view.frame.width, y: view.frame.height-45)
+        particleEmitter.emitterPosition = CGPoint(x: view.frame.width, y: view.frame.height-43)
         particleEmitter.emitterShape = .point
         particleEmitter.emitterSize = CGSize(width: view.frame.width, height: 1)
         particleEmitter.renderMode = .additive
@@ -75,13 +79,25 @@ class SecondViewController: UIViewController {
         view.layer.insertSublayer(particleEmitter, at: 1)
     }
     
+    @IBAction func musicButtonTapped(_ sender: Any) {
+        
+        if isMusicOn == true{
+        }else{
+            setBackgroundMusic(songName: "NightMusic")
+            isMusicOn = true
+        }
+    }
+    
+    @IBAction func muteButtonTapped(_ sender: Any) {
+        isMusicOn = false
+        player.stop()
+    }
+    
+    @IBAction func DayButtonTapped(_ sender: Any) {
+    }
     
     //BackgroundMusic
     var player: AVAudioPlayer = AVAudioPlayer()
-    
-    @IBAction func DayButtonTapped(_ sender: Any) {
-        player.stop()
-    }
     
     func setBackgroundMusic(songName: String){
         do{
@@ -109,8 +125,6 @@ class SecondViewController: UIViewController {
         createParticlesCar()
         setBackgroundImage(imageName: "NightCity")
 //        setBackgroundImage(imageName: "5")
-        setBackgroundMusic(songName: "NightMusic")
-        
     }
 
 }

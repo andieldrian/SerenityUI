@@ -65,7 +65,7 @@
                                 </state>
                                 <connections>
                                     <action selector="DayButtonTapped:" destination="oCz-c6-gLD" eventType="touchUpInside" id="uIf-24-iZq"/>
-                                    <segue destination="oCz-c6-gLD" kind="show" id="Rfw-Dn-ZB9"/>
+                                    <segue destination="oCz-c6-gLD" kind="show" animates="NO" id="Rfw-Dn-ZB9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fB-Iu-ph3">
@@ -77,6 +77,28 @@
                                 </state>
                                 <connections>
                                     <action selector="SnowButtonTapped:" destination="oCz-c6-gLD" eventType="touchUpInside" id="o0e-OI-doX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZoA-uv-6dz">
+                                <rect key="frame" x="20" y="46" width="41" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FontAwesome5Free-Solid" family="Font Awesome 5 Free" pointSize="36"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="musicButtonTapped:" destination="oCz-c6-gLD" eventType="touchUpInside" id="cUm-ck-F33"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6XH-VO-U68">
+                                <rect key="frame" x="88" y="46" width="36" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FontAwesome5Free-Solid" family="Font Awesome 5 Free" pointSize="36"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="muteButtonTapped:" destination="oCz-c6-gLD" eventType="touchUpInside" id="DB1-cd-VUR"/>
                                 </connections>
                             </button>
                         </subviews>
