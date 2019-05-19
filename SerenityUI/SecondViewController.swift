@@ -40,9 +40,9 @@ class SecondViewController: UIViewController {
         cell.velocityRange = 50
         cell.emissionLongitude = .pi
 //        cell.spinRange = 5
-        cell.scale = 0.15
+        cell.scale = 0.1
         cell.scaleRange = 0.1
-        cell.color = UIColor(white: 1, alpha: 0.7).cgColor
+        cell.color = UIColor(white: 1, alpha: 0.8).cgColor
 //        cell.alphaSpeed = -0.025
         cell.contents = UIImage(named: particle)?.cgImage
         particleEmitter.emitterCells = [cell]
@@ -53,10 +53,10 @@ class SecondViewController: UIViewController {
     func createParticlesCar() {
         let particleEmitter = CAEmitterLayer()
         
-        particleEmitter.emitterPosition = CGPoint(x: view.frame.width, y: view.frame.height-50)
+        particleEmitter.emitterPosition = CGPoint(x: view.frame.width, y: view.frame.height-45)
         particleEmitter.emitterShape = .point
         particleEmitter.emitterSize = CGSize(width: view.frame.width, height: 1)
-//        particleEmitter.renderMode = .additive
+        particleEmitter.renderMode = .additive
         
         let cell = CAEmitterCell()
         cell.birthRate = 0.1
@@ -67,9 +67,9 @@ class SecondViewController: UIViewController {
         //        cell.spinRange = 5
         cell.scale = 0.2
 //        cell.scaleRange = 0.1
-//        cell.color = UIColor(white: 1, alpha: 0.7).cgColor
+        cell.color = UIColor(white: 1, alpha: 1.0).cgColor
         //        cell.alphaSpeed = -0.025
-        cell.contents = UIImage(named: "car")?.cgImage
+        cell.contents = UIImage(named: "carLights")?.cgImage
         particleEmitter.emitterCells = [cell]
         
         view.layer.insertSublayer(particleEmitter, at: 1)
