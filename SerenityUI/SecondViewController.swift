@@ -16,13 +16,13 @@ class SecondViewController: UIViewController {
     @IBAction func SnowButtonTapped(_ sender: Any) {
         if isOn == true{
         }else{
-            createParticles()
+            createParticles(particle: "spark")
             isOn = true
         }
     }
     
     //Particle Emitter
-    func createParticles() {
+    func createParticles(particle: String) {
         let particleEmitter = CAEmitterLayer()
         
         particleEmitter.emitterPosition = CGPoint(x: view.frame.width / 2.0, y: -50)
@@ -31,17 +31,17 @@ class SecondViewController: UIViewController {
         particleEmitter.renderMode = .additive
         
         let cell = CAEmitterCell()
-        cell.birthRate = 100
-        cell.lifetime = 20.0
-        cell.velocity = 700
-        cell.velocityRange = 1000
+        cell.birthRate = 40
+        cell.lifetime = 10.0
+        cell.velocity = 170
+        cell.velocityRange = 70
         cell.emissionLongitude = .pi
 //        cell.spinRange = 5
         cell.scale = 0.15
         cell.scaleRange = 0.1
-        cell.color = UIColor(white: 1, alpha: 0.1).cgColor
+        cell.color = UIColor(white: 1, alpha: 1.0).cgColor
 //        cell.alphaSpeed = -0.025
-        cell.contents = UIImage(named: "spark")?.cgImage
+        cell.contents = UIImage(named: particle)?.cgImage
         particleEmitter.emitterCells = [cell]
         
         view.layer.insertSublayer(particleEmitter, at: 1)
@@ -78,7 +78,7 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setBackgroundImage(imageName: "5")
+        setBackgroundImage(imageName: "Night")
         setBackgroundMusic(songName: "NightMusic")
         
     }
