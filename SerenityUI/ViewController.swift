@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         cell.velocityRange = 40
         cell.emissionLongitude = .pi
         cell.spinRange = 5
-        cell.scale = 0.15
+        cell.scale = 0.12
         cell.scaleRange = 0.1
 //        cell.color = UIColor(white: 1, alpha: 0.1).cgColor
         //        cell.alphaSpeed = -0.025
@@ -68,7 +68,8 @@ var player: AVAudioPlayer = AVAudioPlayer()
         super.viewDidLoad()
         
         createParticles(particle: "sakura")
-        setBackgroundImage(imageName: "Day")
+        setBackgroundImage(imageName: "DayBackground")
+//        setBackgroundImage(imageName: "1")
         setBackgroundMusic(songName: "DayMusic")
     }
 
