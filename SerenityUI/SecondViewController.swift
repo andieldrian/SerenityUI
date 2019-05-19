@@ -16,7 +16,10 @@ class SecondViewController: UIViewController {
     @IBAction func SnowButtonTapped(_ sender: Any) {
         if isOn == true{
         }else{
-            createParticles(particle: "spark")
+//            createParticles(particle: "spark")
+            UIView.animate(withDuration: 10, animations: {
+                self.createParticles(particle: "spark")
+            })
             isOn = true
         }
     }
@@ -31,10 +34,10 @@ class SecondViewController: UIViewController {
         particleEmitter.renderMode = .additive
         
         let cell = CAEmitterCell()
-        cell.birthRate = 40
-        cell.lifetime = 10.0
-        cell.velocity = 170
-        cell.velocityRange = 70
+        cell.birthRate = 20
+        cell.lifetime = 9.0
+        cell.velocity = 120
+        cell.velocityRange = 50
         cell.emissionLongitude = .pi
 //        cell.spinRange = 5
         cell.scale = 0.15
@@ -45,7 +48,6 @@ class SecondViewController: UIViewController {
         particleEmitter.emitterCells = [cell]
         
         view.layer.insertSublayer(particleEmitter, at: 1)
-//        addChild(particleEmitter)
     }
     
     //BackgroundMusic

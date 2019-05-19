@@ -35,7 +35,6 @@ class ViewController: UIViewController {
         particleEmitter.emitterCells = [cell]
         
         view.layer.insertSublayer(particleEmitter, at: 1)
-        //        addChild(particleEmitter)
     }
     
     //BackgroundMusic
