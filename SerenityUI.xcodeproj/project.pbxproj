@@ -19,7 +19,6 @@
 		8BA1A7F3228F09A100EEDEBF /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1A7F2228F09A100EEDEBF /* fa-regular-400.ttf */; };
 		8BA1A7F5228F09A900EEDEBF /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BA1A7F4228F09A900EEDEBF /* fa-solid-900.ttf */; };
 		8BB71B9D22928AB400C27A62 /* NightMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BB71B9C22928AB400C27A62 /* NightMusic.mp3 */; };
-		8BB71B9F22928D9F00C27A62 /* SnowSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BB71B9E22928D9F00C27A62 /* SnowSound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +36,6 @@
 		8BA1A7F2228F09A100EEDEBF /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fa-regular-400.ttf"; path = "../../../FontAwesome/fa-regular-400.ttf"; sourceTree = "<group>"; };
 		8BA1A7F4228F09A900EEDEBF /* fa-solid-900.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "fa-solid-900.ttf"; path = "../../../FontAwesome/fa-solid-900.ttf"; sourceTree = "<group>"; };
 		8BB71B9C22928AB400C27A62 /* NightMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = NightMusic.mp3; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/NightMusic.mp3"; sourceTree = "<group>"; };
-		8BB71B9E22928D9F00C27A62 /* SnowSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SnowSound.mp3; path = ../../../SnowSound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +83,6 @@
 		8BA1A7EF228F097100EEDEBF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8BB71B9E22928D9F00C27A62 /* SnowSound.mp3 */,
 				8BB71B9C22928AB400C27A62 /* NightMusic.mp3 */,
 				8BA1A7F2228F09A100EEDEBF /* fa-regular-400.ttf */,
 				8BA1A7F0228F099300EEDEBF /* fa-brands-400.ttf */,
@@ -157,7 +154,6 @@
 				8BA1A7F1228F099300EEDEBF /* fa-brands-400.ttf in Resources */,
 				8BA1A7F3228F09A100EEDEBF /* fa-regular-400.ttf in Resources */,
 				8BA1A7E0228EF99D00EEDEBF /* LaunchScreen.storyboard in Resources */,
-				8BB71B9F22928D9F00C27A62 /* SnowSound.mp3 in Resources */,
 				8B51D717228F2698002D7D19 /* Assets.xcassets in Resources */,
 				8B51D713228F24D2002D7D19 /* DayMusic.mp3 in Resources */,
 				8BA1A7F5228F09A900EEDEBF /* fa-solid-900.ttf in Resources */,

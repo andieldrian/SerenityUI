@@ -68,8 +68,8 @@ var player: AVAudioPlayer = AVAudioPlayer()
         super.viewDidLoad()
         
         createParticles(particle: "sakura")
-        setBackgroundImage(imageName: "DayBackground")
-//        setBackgroundImage(imageName: "1")
+//        setBackgroundImage(imageName: "DayBackground")
+        setBackgroundImage(imageName: "SakuraBackground")
         setBackgroundMusic(songName: "DayMusic")
     }
 

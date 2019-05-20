@@ -78,6 +78,7 @@ class SecondViewController: UIViewController {
             setBackgroundMusic(songName: "NightMusic")
             isMusicOn = true
         }
+        
     }
     
     @IBAction func muteButtonTapped(_ sender: Any) {
@@ -87,7 +88,6 @@ class SecondViewController: UIViewController {
             isMusicOn = false
         }
     }
-    
     
     //BackgroundMusic
     var player: AVAudioPlayer = AVAudioPlayer()
@@ -114,7 +114,8 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setBackgroundImage(imageName: "NightCity")
+//        setBackgroundImage(imageName: "NightCity")
+        setBackgroundImage(imageName: "NightCityCool")
         createParticlesCar()
     }
 
