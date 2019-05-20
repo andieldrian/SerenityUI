@@ -67,7 +67,8 @@ class SecondViewController: UIViewController {
     
     
     @IBAction func viewTouchDown(_ sender: Any) {
-        createParticles(particle: "spark")
+        createParticles(particle: "spark") //Snow Effect
+        setBackgroundMusic(songName: "SnowSound")
         
     }
     
@@ -112,7 +113,7 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setBackgroundImage(imageName: "NightCitySelf")
+        setBackgroundImage(imageName: "NightCity")
         createParticlesCar()
     }
 
