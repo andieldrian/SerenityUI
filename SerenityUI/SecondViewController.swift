@@ -59,7 +59,7 @@ class SecondViewController: UIViewController {
 //        cell.scaleRange = 0.1
         cell.color = UIColor(white: 1, alpha: 1.0).cgColor
         //        cell.alphaSpeed = -0.025
-        cell.contents = UIImage(named: "Car")?.cgImage
+        cell.contents = UIImage(named: "car")?.cgImage
         particleEmitter.emitterCells = [cell]
         
         view.layer.insertSublayer(particleEmitter, at: 1)
