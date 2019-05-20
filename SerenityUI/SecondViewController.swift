@@ -83,8 +83,11 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func muteButtonTapped(_ sender: Any) {
-        isMusicOn = false
-        player.stop()
+        if isMusicOn == false{
+        }else{
+            player.stop()
+            isMusicOn = false
+        }
     }
     
     
