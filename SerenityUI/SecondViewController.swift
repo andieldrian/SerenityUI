@@ -68,8 +68,6 @@ class SecondViewController: UIViewController {
     
     @IBAction func viewTouchDown(_ sender: Any) {
         createParticles(particle: "spark") //Snow Effect
-        setBackgroundMusic(songName: "SnowSound")
-        
     }
     
     //Music Button
