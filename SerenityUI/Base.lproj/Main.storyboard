@@ -55,30 +55,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ln5-Lt-TIS">
-                                <rect key="frame" x="360" y="46" width="34" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="FontAwesome5Free-Solid" family="Font Awesome 5 Free" pointSize="34"/>
-                                <state key="normal" title="">
-                                    <color key="titleColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="titleShadowColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <action selector="NightButtonTapped:" destination="oCz-c6-gLD" eventType="touchUpInside" id="7hh-7O-8Wx"/>
-                                    <segue destination="oCz-c6-gLD" kind="show" animates="NO" id="GMw-EE-zF1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fB-Iu-ph3">
-                                <rect key="frame" x="301" y="45" width="32" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="FontAwesome5Free-Solid" family="Font Awesome 5 Free" pointSize="36"/>
-                                <state key="normal" title="">
-                                    <color key="titleColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                                <connections>
-                                    <action selector="SnowButtonTapped:" destination="oCz-c6-gLD" eventType="touchUpInside" id="o0e-OI-doX"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZoA-uv-6dz">
                                 <rect key="frame" x="20" y="46" width="41" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -101,6 +77,14 @@
                                     <action selector="muteButtonTapped:" destination="oCz-c6-gLD" eventType="touchUpInside" id="DB1-cd-VUR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guK-E8-LJi">
+                                <rect key="frame" x="0.0" y="85" width="414" height="728"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="viewTouchDown:" destination="oCz-c6-gLD" eventType="touchDown" id="vPF-OB-N4y"/>
+                                    <segue destination="oCz-c6-gLD" kind="show" animates="NO" id="jaO-nz-WAy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ujm-z8-hea"/>
@@ -109,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kEs-YI-Jay" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="883" y="157"/>
+            <point key="canvasLocation" x="882.60869565217399" y="156.69642857142856"/>
         </scene>
     </scenes>
 </document>

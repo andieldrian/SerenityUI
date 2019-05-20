@@ -14,17 +14,6 @@ class SecondViewController: UIViewController {
     var isSnowOn = false
     var isMusicOn = false
     
-    @IBAction func SnowButtonTapped(_ sender: Any) {
-        if isSnowOn == true{
-        }else{
-//            createParticles(particle: "spark")
-            UIView.animate(withDuration: 10, animations: {
-                self.createParticles(particle: "spark")
-            })
-            isSnowOn = true
-        }
-    }
-    
     //Particle Emitter
     func createParticles(particle: String) {
         let particleEmitter = CAEmitterLayer()
@@ -65,7 +54,7 @@ class SecondViewController: UIViewController {
         cell.velocity = 90
 //        cell.velocityRange = 50
         cell.emissionLongitude = .pi
-        //        cell.spinRange = 5
+//        cell.spinRange = 5
         cell.scale = 0.17
 //        cell.scaleRange = 0.1
         cell.color = UIColor(white: 1, alpha: 1.0).cgColor
@@ -76,6 +65,14 @@ class SecondViewController: UIViewController {
         view.layer.insertSublayer(particleEmitter, at: 1)
     }
     
+    
+    @IBAction func viewTouchDown(_ sender: Any) {
+        createParticles(particle: "spark")
+        createParticlesCar()
+        
+    }
+    
+    //Music Button
     @IBAction func musicButtonTapped(_ sender: Any) {
         
         if isMusicOn == true{
@@ -90,10 +87,6 @@ class SecondViewController: UIViewController {
         player.stop()
     }
     
-    @IBAction func NightButtonTapped(_ sender: Any) {
-        isMusicOn = false
-        player.stop()
-    }
     
     //BackgroundMusic
     var player: AVAudioPlayer = AVAudioPlayer()
@@ -120,10 +113,7 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        createParticlesCar()
-        setBackgroundImage(imageName: "NightCity")
-//        setBackgroundImage(imageName: "5")
+        setBackgroundImage(imageName: "NightBackground")
     }
 
 }
