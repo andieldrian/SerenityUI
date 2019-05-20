@@ -43,19 +43,19 @@ class SecondViewController: UIViewController {
     func createParticlesCar() {
         let particleEmitter = CAEmitterLayer()
         
-        particleEmitter.emitterPosition = CGPoint(x: view.frame.width, y: view.frame.height-43)
+        particleEmitter.emitterPosition = CGPoint(x: view.frame.width, y: view.frame.height-25)
         particleEmitter.emitterShape = .point
         particleEmitter.emitterSize = CGSize(width: view.frame.width, height: 1)
         particleEmitter.renderMode = .additive
         
         let cell = CAEmitterCell()
-        cell.birthRate = 0.15
+        cell.birthRate = 0.1
         cell.lifetime = 10
-        cell.velocity = 90
-//        cell.velocityRange = 50
+        cell.velocity = 110
+        cell.velocityRange = 50
         cell.emissionLongitude = .pi
 //        cell.spinRange = 5
-        cell.scale = 0.17
+        cell.scale = 0.1
 //        cell.scaleRange = 0.1
         cell.color = UIColor(white: 1, alpha: 1.0).cgColor
         //        cell.alphaSpeed = -0.025
@@ -68,7 +68,6 @@ class SecondViewController: UIViewController {
     
     @IBAction func viewTouchDown(_ sender: Any) {
         createParticles(particle: "spark")
-        createParticlesCar()
         
     }
     
@@ -113,7 +112,8 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setBackgroundImage(imageName: "NightBackground")
+        setBackgroundImage(imageName: "NightCitySelf")
+        createParticlesCar()
     }
 
 }
