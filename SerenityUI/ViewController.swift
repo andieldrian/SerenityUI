@@ -11,6 +11,8 @@ import AVFoundation
 import SpriteKit
 class ViewController: UIViewController {
     
+    var isMusicOn = false
+    
     //Particle Emitter
     func createParticles(particle: String) {
         let particleEmitter = CAEmitterLayer()
@@ -35,6 +37,22 @@ class ViewController: UIViewController {
         particleEmitter.emitterCells = [cell]
         
         view.layer.insertSublayer(particleEmitter, at: 1)
+    }
+    
+    @IBAction func musicButtonTapped(_ sender: Any) {
+        if isMusicOn == true{
+        }else{
+            player.play()
+            isMusicOn = true
+        }
+    }
+    
+    @IBAction func muteButtonTapped(_ sender: Any) {
+        if isMusicOn == false{
+        }else{
+            player.stop()
+            isMusicOn = false
+        }
     }
     
     //BackgroundMusic
@@ -68,9 +86,9 @@ var player: AVAudioPlayer = AVAudioPlayer()
         super.viewDidLoad()
         
         createParticles(particle: "sakura")
-//        setBackgroundImage(imageName: "DayBackground")
         setBackgroundImage(imageName: "SakuraBackground")
         setBackgroundMusic(songName: "DayMusic")
+        isMusicOn = true
     }
 
 }

@@ -28,12 +28,36 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="FontAwesome5Free-Solid" family="Font Awesome 5 Free" pointSize="35"/>
                                 <state key="normal" title="">
-                                    <color key="titleColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="titleShadowColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
                                     <action selector="NightButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d20-3Q-eWp"/>
                                     <segue destination="oCz-c6-gLD" kind="show" id="sKO-qL-l6N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g86-q3-PiU">
+                                <rect key="frame" x="20" y="46" width="41" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FontAwesome5Free-Solid" family="Font Awesome 5 Free" pointSize="36"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="musicButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FM1-DV-JM6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nS5-iq-wlc">
+                                <rect key="frame" x="88" y="46" width="36" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FontAwesome5Free-Solid" family="Font Awesome 5 Free" pointSize="36"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="muteButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Ww-lx-hEF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -82,7 +106,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="viewTouchDown:" destination="oCz-c6-gLD" eventType="touchDown" id="vPF-OB-N4y"/>
-                                    <segue destination="oCz-c6-gLD" kind="show" animates="NO" id="jaO-nz-WAy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNE-kb-ixs">
+                                <rect key="frame" x="359" y="44" width="36" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FontAwesome5Free-Solid" family="Font Awesome 5 Free" pointSize="36"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="titleShadowColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="dayButtonTapped:" destination="oCz-c6-gLD" eventType="touchUpInside" id="pbl-ux-8Ly"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Yhe-vy-2Oy"/>
                                 </connections>
                             </button>
                         </subviews>

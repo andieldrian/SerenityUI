@@ -67,18 +67,22 @@ class SecondViewController: UIViewController {
     
     
     @IBAction func viewTouchDown(_ sender: Any) {
-        createParticles(particle: "spark") //Snow Effect
+//        createParticles(particle: "spark") //Snow Effect
+    }
+    
+    
+    @IBAction func dayButtonTapped(_ sender: Any) {
+        isMusicOn = false
+        player.stop()
     }
     
     //Music Button
     @IBAction func musicButtonTapped(_ sender: Any) {
-        
         if isMusicOn == true{
         }else{
-            setBackgroundMusic(songName: "NightMusic")
+            player.play()
             isMusicOn = true
         }
-        
     }
     
     @IBAction func muteButtonTapped(_ sender: Any) {
@@ -117,6 +121,9 @@ class SecondViewController: UIViewController {
 //        setBackgroundImage(imageName: "NightCity")
         setBackgroundImage(imageName: "NightCityCool")
         createParticlesCar()
+        createParticles(particle: "spark")
+        setBackgroundMusic(songName: "NightMusic")
+        isMusicOn = true
     }
 
 }
